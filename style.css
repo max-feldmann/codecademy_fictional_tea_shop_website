@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    font-family: Helvetica;
+    font-size: 22;
+    text-align: center;
+}
+
+/* HEADER Styles*/
+
+header {
+    height: 69px;
+    background-color: black;
+    border-bottom: 1px solid seashell;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; top: 0;
+}
+
+.header-logo {
+    height: 50px;
+}
+
+.topnav a {
+    font-size: 24px;
+    text-decoration: none;
+    color: seashell;
+    margin: 0 15px;
+}
+
+.topnav a:hover {
+    text-decoration: underline;
+}
