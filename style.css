@@ -33,7 +33,7 @@ h5 {
 /* HEADER Styles*/
 
 header {
-    height: 69px;
+    min-height: 69px;
     background-color: black;
     border-bottom: 1px solid seashell;
     padding: 0 10px;
@@ -60,6 +60,13 @@ header {
     text-decoration: underline;
 }
 
+.topnav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* HERO SECTION*/
+
 #hero-section {
     background-image: url("assets/img-mission-background.webp");
     background-size: cover;
@@ -68,18 +75,25 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 2.5%;
 }
 
 .hero-mission-statement {
     width: 100%;
+    padding: 0 20px;
     background-color:black;
+}
+
+.mission-statement {
+    line-height: 1.5em;
 }
 
 /* PRODUCT GALLERY */
 
 #tea-of-the-month {
     margin: 100px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .product-tile {
@@ -87,6 +101,7 @@ header {
 }
 
 .product-gallery {
+    max-width: 1200px;
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -94,8 +109,8 @@ header {
 }
 
 .product-gallery img {
-    width: 450px;
-    height: 300px;
+    margin: 10px;
+    height: 200px;
     border-radius: 5px;
 }
 
@@ -140,4 +155,46 @@ header {
 .contact-paths {
     padding-top: 50px;
     min-height: 300px;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .topnav {
+        margin: 15px 0;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    
+    #shop-locations h2 {
+        color: black;
+    }
+
+    .adress {
+        font-size: 18px;
+    }
+
+    .topnav a {
+        font-size: 20px;
+    }
+    
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    h5 {
+        font-size: 15px;
+    } 
 }
