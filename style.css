@@ -8,6 +8,10 @@ body {
     font-family: Helvetica;
 }
 
+main {
+    padding: 0 20px;
+}
+
 /* GENERAL */
 
 h1 {
@@ -167,6 +171,10 @@ header {
 
 @media only screen and (max-width: 1000px) {
     
+    main {
+        padding: 0 10px;
+    }
+
     #shop-locations h2 {
         color: black;
     }
